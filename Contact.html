@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact me </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            width: 100%;
+            background-color: black;        }
+        section{
+            padding-top: 20px;
+            margin-top: 20px;
+            height: 500px;
+        }
+        .question,answers{
+            float: left;
+        }
+        footer {
+            height: 130px;
+            width: 40%
+        }
+
+        h1 {
+            margin-top: 30px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px 2px gray
+        }
+
+        form {
+            margin-left: 10px;
+            padding-left: 20px;
+            width: 100%;
+            height: 450px;
+        }
+
+        dd {
+            color: white;
+            font-size: 20px;
+            font-family: arial;
+            margin: 10px
+        }
+
+        sup {
+            color: red;
+            font-weight: 700
+        }
+        .mobileno{
+            width: 175px;
+            height: 40px;
+        }
+        .qdetails {
+            margin-top: 17px
+        }
+
+        .details {
+            width: 115px;
+            height: 40px
+        }
+
+        .mindetails {
+            height: 40px;
+            width: 55px
+        }
+
+        .fulldetails {
+            width: 233px;
+            height: 40px
+        }
+
+        
+        .btn {
+            position: relative;
+            left: 130px;
+            width: 100px;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 10px
+        }
+
+        #socialmedia {
+            text-align: center;
+            width: 400px;
+            height: 50px;
+            color: #fff;
+            padding-left: 10px;
+        }
+
+        #socialmedia button {
+            border-radius: 20px;
+            margin: 10px
+        }
+
+        #socialmedia p {
+            margin-top: 20px
+        }
+
+        .bi:hover {
+            color: gold
+        }
+
+        @media screen and (max-width:450px){
+            form{
+                margin-left: 0;
+                padding-left: 10px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="Contact">
+        <h1 style="text-decoration: underline;">Contact me </h1>
+        <section>
+            <form autocomplete="on" action="mailto:syedfahad1237@gmail.com" method="post">
+                <div class="question">
+                    <dl>
+                        <dd class="qdetails">
+                            Full Name <sup>*</sup>
+                        </dd>
+                        <dd class="qdetails">
+                            Phone no <sup>*</sup>
+                        <dd class="qdetails">
+                            E-mail <sup>*</sup>
+                        </dd>
+                        <dd class="qdetails">
+                            Address
+                        </dd>
+                        <dd class="qdetails">
+                            Message
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="answers">
+                    <dl>
+                        <dd>
+                            <input class="details" type="text" name="firstname" required autofocus
+                                placeholder="first name">
+
+                            <input class="details" type="text" name="lastname" required placeholder="last name">
+
+                        </dd>
+                        <dd>
+                            <span>
+                                <select class="mindetails">
+                                    <option value="India">91+</option>
+                                    <option value="Austrailia"> 61+</option>
+                                    <option value="China">86+</option>
+                                    <option value="Afghanistan">93+</option>
+                                </select>
+                            </span>
+
+                            <span>
+                                <input type="tel" class="mobileno" name="mobileno" placeholder="9876543210">
+                            </span>
+                        </dd>
+                        <dd>
+                            <input class="fulldetails" type="email" name="mailid" required>
+
+                        </dd>
+                        <dd>
+                            <input class="fulldetails" type="text" name="address" id="">
+                        </dd>
+                        <dd>
+                            <textarea name="message"  rows="4"></textarea>
+                        </dd>
+                    </dl>
+                    <button class="btn btn-secondary">submit</button>
+                </div>
+    
+            </form>
+        </section>
+
+        <footer>
+            <div id="socialmedia">
+                <span>
+                    <a href="https://github.com/syedfahad1215" target="_blank"> <button  class="bi bi-github">"> </button></a>
+                </span>
+                <span>
+                    <a href="https://www.facebook.com/syedfahad1215" target="_blank"><button class="bi bi-facebook"></button></a>
+                </span>
+                <span>
+                    <a href="https://instagram.com/syedfahad1215?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><button
+                            class="bi bi-instagram"></button></a>
+                </span>
+                <span>
+                    <a href="https://x.com/Syedfah41223271?t=gIzb71_F3TlhBmMsnc841w&s=09" target="_blank"><button
+                            class="bi bi-twitter"></button></a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/in/syed-fahad-467412226/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" ><button
+                            class="bi bi-linkedin"></button></a>
+                </span>
+                <p class="footer-para">© Copyright </p>
+            </div>
+        </footer>
+
+
+
+    </div>
+</body>
